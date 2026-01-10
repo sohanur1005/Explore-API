@@ -1,5 +1,5 @@
 
-const user={id:1,name:'Sohaur',job:'Student'
+const user={id:1,name:'Sohanur',job:'Student'
 
 }
 console.log(user)
@@ -8,8 +8,8 @@ const stringified=JSON.stringify(user)
 console.log(stringified)
 /*
 output
-{ id: 1, name: 'Sohaur', job: 'Student' }
-{"id":1,"name":"Sohaur","job":"Student"}
+{ id: 1, name: 'Sohanur', job: 'Student' }
+{"id":1,"name":"Sohanur","job":"Student"}
 */
 
 
