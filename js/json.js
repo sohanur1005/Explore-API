@@ -30,3 +30,9 @@ const shop={
 console.log(shop)
 const  shopJSON=JSON.stringify(shop);
 console.log(shopJSON);
+
+console.log(typeof(shop))
+console.log(typeof(shopJSON))
+// Convert  object to string using JSON.Parse
+const shopObj=JSON.parse(shopJSON)
+console.log(shopObj)
