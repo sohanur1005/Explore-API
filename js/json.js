@@ -33,6 +33,6 @@ console.log(shopJSON);
 
 console.log(typeof(shop))
 console.log(typeof(shopJSON))
-// Convert  object to string using JSON.Parse
+// Convert string to object  using JSON.Parse
 const shopObj=JSON.parse(shopJSON)
 console.log(shopObj)
