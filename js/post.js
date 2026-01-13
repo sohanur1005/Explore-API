@@ -1,3 +1,6 @@
+
+// we take this data from json placeholder
+
 function loadPost(){
     fetch('https://jsonplaceholder.typicode.com/posts')
 
