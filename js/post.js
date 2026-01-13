@@ -5,22 +5,27 @@ function loadPost(){
     .then(data => displayPosts(data))
 }
 
-/*  get the container element where we want to add the new element
+/* 1. get the container element where we want to add the new element
+2.create child element
+3.set inner Text or html
+4.appendchild
 
 */
 
 function displayPosts(posts){
 
-    const postsContainer=document.getElementById('post-container')
+    const postsContainer=document.getElementById('posts-container')
     for(const post of posts)
     {
-        const div=document.createElement('div');
-        div.innerHTML= `  
-          <h4>User-</h4>
-          <h5>Posts: title</h5>
-          <p>Post Description</p>
+        console.log(post)
+        const postDiv=document.createElement('div');
+        postDiv.innerHTML= `  
+          <h4>User-${post.userId}</h4>
+          <h5>Posts: ${post.title}</h5>
+          <p>Post Description: ${post.body}</p>
         
         `;
+        postsContainer.appendChild(postDiv);
     }
 }
 
