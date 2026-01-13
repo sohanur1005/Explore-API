@@ -17,7 +17,9 @@ function displayPosts(posts){
     const postsContainer=document.getElementById('posts-container')
     for(const post of posts)
     {
+       
         console.log(post)
+        
         const postDiv=document.createElement('div');
         postDiv.innerHTML= `  
           <h4>User-${post.userId}</h4>
@@ -26,6 +28,7 @@ function displayPosts(posts){
         
         `;
         postsContainer.appendChild(postDiv);
+         postDiv.classList.add('posts')
     }
 }
 
